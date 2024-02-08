@@ -1,0 +1,1 @@
+fill ~-1 ~-1 ~-1 ~1 ~1 ~1 fire replace #origins-plus-plus:replaceable
