@@ -1,0 +1,16 @@
+{
+	"powers":[
+		"origins:aqua_affinity",
+		"origins:fall_immunity",
+		"origins:fragile",
+		"frog:burn",
+		"frog:dash",
+		"frog:burn_bar",
+		"frog:jump",
+		"frog:poison",
+		"frog:swim",
+		"frog:water_breathing"
+	],
+	"icon":"minecraft:lily_pad",
+	"impact":3
+}
