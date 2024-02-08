@@ -1,0 +1,28 @@
+{
+	"name":"Hidden Spells",
+	"description":"You can summon your spell book at any time by sneaking and holding a book in your offhand.",
+	"type":"origins:active_self",
+	"key":"key.origins.primary_active",
+	"entity_action":{
+		"type":"origins:execute_command",
+		"command":"function mage:mage_book"
+	},
+	"condition":{
+		"type":"origins:and",
+		"conditions":[
+			{
+				"type":"origins:sneaking"
+			},
+			{
+				"type":"origins:equipped_item",
+				"equipment_slot":"offhand",
+				"item_condition":{
+					"type":"origins:ingredient",
+					"ingredient":{
+						"item":"minecraft:book"
+					}
+				}
+			}
+		]
+	}
+}
