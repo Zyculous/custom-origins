@@ -35,12 +35,27 @@
 			"compare_to":2000
 		}
 	},
+	"check":{
+		"type":"origins:action_over_time",
+		"entity_action":{
+			"type":"origins:play_sound",
+			"sound":"minecraft:block.anvil.place",
+			"volume":0.5
+		},
+		"interval":40,
+		"condition":{
+			"type":"origins:resource",
+			"resource":"mage:resource",
+			"comparison":"<",
+			"compare_to":100
+		}
+	},
 	"respawn":{
 		"type":"origins:action_on_callback",
 		"entity_action_respawned":{
 			"type":"origins:change_resource",
 			"resource":"mage:resource",
-			"change":200,
+			"change":500,
 			"operation":"set"
 		}
 	}
